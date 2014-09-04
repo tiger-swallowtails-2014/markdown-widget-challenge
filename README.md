@@ -2,9 +2,9 @@
 
 ## Learning Competencies
 
-* Use basic JavaScript - functions, control structures, scope: #p2
-* Build a pure JavaScript application: #p2
-* Build a pure JavaScript class: #p2
+* Use basic JavaScript - functions, control structures, scope
+* Build a pure JavaScript application
+* Build a pure JavaScript class
 * Write OO JavaScript
 
 ## Summary
@@ -51,6 +51,6 @@ hang your development process in the research of specifics.
 * [markdown-js][]
 
 [MVC]: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
-[MVPresenter]: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
+[MVP]: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
 [identity]: http://en.wikipedia.org/wiki/Identity_transform
 [markdown-js]: https://github.com/evilstreak/markdown-js
