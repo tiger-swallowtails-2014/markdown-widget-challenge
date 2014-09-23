@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <form>
+        	<textarea id="typingarea" cols="30" rows="5"></textarea><br>
+        	<div style="border: 1px solid black; padding: 10px; width: 200px;" id="preview" cols="30" rows="5"></div>
+        	<input type="submit"> 
+        </form>
+
+
+        <script>
+				  var enteredtext = document.getElementById('typingarea');
+
+            enteredtext.onkeyup = function(){
+              var preview = document.getElementById('preview')
+              var entered = this.value;
+              var textToParse = entered.split(" ")
+              var parsed = "";
+              for (var i = 0; i<textToParse.length; i++){
+              	var matches = textToParse[i].match(/\*{1}(.*)\*{1}/)
+              	if (matches !=null) {
+	              	var italic_match = textToParse[i].replace(/\*{1}(.*)\*{1}/, '<i>$1</i>')
+	              	parsed += italic_match + " ";
+	              } else {
+	              	parsed += textToParse[i] + " ";
+	              }
+              }
+              preview.innerHTML = parsed;
+           }
+        </script>
+    </body>
+</html>
